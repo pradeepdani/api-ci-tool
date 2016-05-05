@@ -1,0 +1,338 @@
+[
+  {
+    "id": "As-a-Cricket-API-consumer,-I-want-to-get-India-rankings-in-all-formats-so-that-I-can-build-a-page",
+    "name": "As a Cricket API consumer, I want to get India rankings in all formats so that I can build a page",
+    "description": "",
+    "line": 1,
+    "keyword": "Feature",
+    "uri": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/integration.test/CricketResults.feature",
+    "elements": [
+      {
+        "name": "The Cricket API should show that India's ODI ranking was 4",
+        "id": "As-a-Cricket-API-consumer,-I-want-to-get-India-rankings-in-all-formats-so-that-I-can-build-a-page;the-cricket-api-should-show-that-india's-odi-ranking-was-4",
+        "line": 4,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1184016
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/integration.test/step_definitions/cricket-app-tests.js:13"
+            }
+          },
+          {
+            "name": "I set query parameters to",
+            "line": 5,
+            "keyword": "Given ",
+            "rows": [
+              {
+                "cells": [
+                  "parameter",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "team",
+                  "India"
+                ]
+              },
+              {
+                "cells": [
+                  "formatType",
+                  "ODI"
+                ]
+              }
+            ],
+            "result": {
+              "status": "passed",
+              "duration": 816680
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:46"
+            }
+          },
+          {
+            "name": "I GET /rankings",
+            "line": 9,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 203331880
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:56"
+            }
+          },
+          {
+            "name": "response code should be 200",
+            "line": 10,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 263656
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:147"
+            }
+          },
+          {
+            "name": "response body path $.query.results.Team.Ranking should be 4",
+            "line": 11,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 1534877
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:210"
+            }
+          }
+        ]
+      },
+      {
+        "name": "The Cricket API should show that India's T20 ranking was 2",
+        "id": "As-a-Cricket-API-consumer,-I-want-to-get-India-rankings-in-all-formats-so-that-I-can-build-a-page;the-cricket-api-should-show-that-india's-t20-ranking-was-2",
+        "line": 14,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 274280
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/integration.test/step_definitions/cricket-app-tests.js:13"
+            }
+          },
+          {
+            "name": "I set query parameters to",
+            "line": 15,
+            "keyword": "Given ",
+            "rows": [
+              {
+                "cells": [
+                  "parameter",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "team",
+                  "India"
+                ]
+              },
+              {
+                "cells": [
+                  "formatType",
+                  "T20"
+                ]
+              }
+            ],
+            "result": {
+              "status": "passed",
+              "duration": 184478
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:46"
+            }
+          },
+          {
+            "name": "I GET /rankings",
+            "line": 19,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 190740065
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:56"
+            }
+          },
+          {
+            "name": "response code should be 200",
+            "line": 20,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 126870
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:147"
+            }
+          },
+          {
+            "name": "response body path $.query.results.Team.Ranking should be 2",
+            "line": 21,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 594835
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:210"
+            }
+          }
+        ]
+      },
+      {
+        "name": "The Cricket API should return a 400 if the correct parameters aren't passed",
+        "id": "As-a-Cricket-API-consumer,-I-want-to-get-India-rankings-in-all-formats-so-that-I-can-build-a-page;the-cricket-api-should-return-a-400-if-the-correct-parameters-aren't-passed",
+        "line": 34,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 406456
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/integration.test/step_definitions/cricket-app-tests.js:13"
+            }
+          },
+          {
+            "name": "I set query parameters to",
+            "line": 35,
+            "keyword": "Given ",
+            "rows": [
+              {
+                "cells": [
+                  "parameter",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "team",
+                  ""
+                ]
+              }
+            ],
+            "result": {
+              "status": "passed",
+              "duration": 147500
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:46"
+            }
+          },
+          {
+            "name": "I GET /rankings",
+            "line": 38,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 70820784
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:56"
+            }
+          },
+          {
+            "name": "response code should be 400",
+            "line": 39,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 111480
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:147"
+            }
+          }
+        ]
+      },
+      {
+        "name": "The Cricket API will return an error if you search for a non playing country",
+        "id": "As-a-Cricket-API-consumer,-I-want-to-get-India-rankings-in-all-formats-so-that-I-can-build-a-page;the-cricket-api-will-return-an-error-if-you-search-for-a-non-playing-country",
+        "line": 41,
+        "keyword": "Scenario",
+        "description": "",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before ",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 84806
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/integration.test/step_definitions/cricket-app-tests.js:13"
+            }
+          },
+          {
+            "name": "I set query parameters to",
+            "line": 42,
+            "keyword": "Given ",
+            "rows": [
+              {
+                "cells": [
+                  "parameter",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "team",
+                  "China"
+                ]
+              },
+              {
+                "cells": [
+                  "formatType",
+                  "T20"
+                ]
+              }
+            ],
+            "result": {
+              "status": "passed",
+              "duration": 758153
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:46"
+            }
+          },
+          {
+            "name": "I GET /rankings",
+            "line": 46,
+            "keyword": "When ",
+            "result": {
+              "status": "passed",
+              "duration": 93865787
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:56"
+            }
+          },
+          {
+            "name": "response code should be 404",
+            "line": 47,
+            "keyword": "Then ",
+            "result": {
+              "status": "passed",
+              "duration": 94642
+            },
+            "match": {
+              "location": "/Users/ApigeeCorporation/Development/MavenProject/maven-project/TEST-AND-CI/api-ci-tools/tests/node_modules/apickli/apickli-gherkin.js:147"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
